@@ -1,7 +1,7 @@
 'use strict';
 
 var audioData = {
-    title: 'Maxi80',
+    title: 'Maxi 80',
     subtitle: 'La musique de toute une génération',
     url: 'https://audio1.maxi80.com',
     image: {
