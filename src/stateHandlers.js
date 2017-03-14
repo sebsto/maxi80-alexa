@@ -73,8 +73,8 @@ var controller = function () {
 
             if (canThrowCard.call(this)) {
                 //TODO : add Maxi80 logo image
-                var cardTitle = audioData.title;
-                var cardContent = audioData.subtitle;
+                var cardTitle = audioData.subtitle;
+                var cardContent = audioData.cardContent;
                 var cardImage = audioData.image;
                 this.response.cardRenderer(cardTitle, cardContent, cardImage);
             }
