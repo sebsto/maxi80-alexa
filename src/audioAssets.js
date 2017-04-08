@@ -2,12 +2,13 @@
 
 var audioData = {
     title: 'Maxi 80',
-    subtitle: 'La radio de toute une génération',
+    subtitle: 'The best eighties music',
+//    subtitle: 'La radio de toute une génération',
     cardContent: "Visit our web site https://www.maxi80.com",
     url: 'https://audio1.maxi80.com',
     image: {
-        largeImageUrl: 'https://alexademo.ninja/maxi80/alexa-artwork-1200.png',
-        smallImageUrl: 'https://alexademo.ninja/maxi80/alexa-artwork-720.png'
+        largeImageUrl: 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-artwork-1200.png',
+        smallImageUrl: 'https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-artwork-720.png'
     }
 };
 

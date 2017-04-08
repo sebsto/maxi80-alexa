@@ -4,10 +4,12 @@ ZIPFILE=AlexaLambda.zip
 REGION=eu-west-1
 FUNCTION_NAME=alexa-maxi80
 HANDLER=index.handler
-EXEC_ROLE=arn:aws:iam::401955065246:role/alexa-audio-player
-RUNTIME=nodejs4.3
-ACCOUNT_ID=401955065246
-PROFILE=seb
+#EXEC_ROLE=arn:aws:iam::401955065246:role/alexa-audio-player
+EXEC_ROLE=arn:aws:iam::743602823695:role/lambda_maxi80_alexa
+RUNTIME=nodejs6.10
+#ACCOUNT_ID=401955065246 # seb @ amazon
+ACCOUNT_ID=743602823695 # maxi80
+PROFILE=maxi80
 
 pushd src
 # if the ZIP file does exist, just refresh it
@@ -30,10 +32,12 @@ aws lambda update-function-code                     \
 # to programmatically create Lambda function :
 
 # aws lambda delete-function                        \
+#          --profile $PROFILE                       \
 #          --region $REGION                         \
 #          --function-name $FUNCTION_NAME
 
 # aws lambda create-function                        \
+#          --profile $PROFILE                       \
 #          --region $REGION                         \
 #          --function-name $FUNCTION_NAME           \
 #          --runtime $RUNTIME                       \
@@ -45,6 +49,7 @@ aws lambda update-function-code                     \
 #          --query FunctionArn --output text
 
 # aws lambda add-permission                         \
+#             --profile $PROFILE                    \
 #             --region $REGION                      \
 #             --function-name $FUNCTION_NAME        \
 #             --statement-id 1                      \
