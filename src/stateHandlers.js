@@ -13,8 +13,8 @@ var stateHandlers = {
         controller.play.call(this, `Welcome to ${audioData.title}`);
     },
     'AMAZON.HelpIntent': function () {
-        var message = `Welcome to ${audioData.title}. I can bring you the best music of the eighties.`;
-        this.response.speak(message);
+        var message = `Welcome to ${audioData.title}. I can bring you the best music of the eighties. You can play, stop, resume listening.  How can I help you ?`;
+        this.response.listen(message);
         this.emit(':responseReady');
     },
     'SessionEndedRequest': function () {
@@ -39,7 +39,7 @@ var stateHandlers = {
     'AMAZON.CancelIntent': function () { this.emit('AMAZON.StopIntent'); },
     'AMAZON.StopIntent': function () { controller.stop.call(this) },
 
-    'AMAZON.ResumeIntent': function () { controller.play.call(this) },
+    'AMAZON.ResumeIntent': function () { controller.play.call(this, `resuming ${audioData.title}`) },
 
     'AMAZON.LoopOnIntent': function () { this.emit('AMAZON.StartOverIntent'); },
     'AMAZON.LoopOffIntent': function () { this.emit('AMAZON.StartOverIntent');},
