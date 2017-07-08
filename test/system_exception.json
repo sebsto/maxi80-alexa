@@ -1,0 +1,38 @@
+	{
+  "version": "1.0",
+  "context": {
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AHIOHHIOCRUYPAJ7VNEMR5TXNDEIOU7D3W2GPQU3PXFPOM6SSJNEU7S3FTJYPYKDWV2CBR2PSQIXPYWK2GZUWL2HRLT5TZFQNEKBVXK34GUD5WRXD7X456ERUYTWMHFGN4EJ53ZD5PURFW23BNWUQW55E7KXLYVQBXVYJ25SAPSSD53GXZ7WSPHXWONI2SNDL5MQI7OQCNRTBBQ"
+      },
+      "device": {
+        "deviceId": "amzn1.ask.device.AFGLHLZEQHTVZVEQ4BNPHMGNGZUGNZNX4PKBN7J4NUZVHSCBTCRWANFBVYQS32AUWTS2KHSD4P4RWA6HVDDYLFI6KGVJHGFTQEC34U54LG3ZCGHBPMLC4HYUP4DVWPI22LSXOXKKKL6Z55UCSCVBZTVDH7KQ",
+        "supportedInterfaces": {
+          "AudioPlayer": {},
+          "Display": {
+            "templateVersion": "1.0",
+            "markupVersion": "1.0"
+          },
+          "VideoApp": {}
+        }
+      },
+      "apiEndpoint": "https://api.amazonalexa.com"
+    }
+  },
+  "request": {
+    "type": "System.ExceptionEncountered",
+    "requestId": "amzn1.echo-api.request.2e4916eb-9148-43ea-b305-505522ba5546",
+    "timestamp": "2017-07-08T10:29:54Z",
+    "locale": "en-US",
+    "error": {
+      "type": "INVALID_RESPONSE",
+      "message": "SpeechletResponse was null"
+    },
+    "cause": {
+      "requestId": "amzn1.echo-api.request.896caf6a-ba9a-4808-a7c3-216b851527bf"
+    }
+  }
+}
