@@ -33,14 +33,20 @@ var audioEventHandlers =  {
          * Storing details in dynamoDB using attributes.
          */
         console.log("Playback stopped");
+        this.callback(null, null);
+        //this.context.succeed(true);
     },
     'PlaybackNearlyFinished' : function () {
         console.log("Playback nearly finished");
+        // this.response.audioPlayerClearQueue('CLEAR_ENQUEUED');
+        this.response.audioPlayerPlay('REPLACE_ALL', audioData.url, audioData.url, null, 0);
+        this.emit(':responseReady');
     },
     'PlaybackFailed' : function () {
         //  AudioPlayer.PlaybackNearlyFinished Directive received. Logging the error.
         console.log("Playback Failed : %j", this.event.request.error);
-        this.context.succeed(true);
+        this.response.audioPlayerClearQueue('CLEAR_ENQUEUED');
+        this.emit(':responseReady');
     }
 };
 

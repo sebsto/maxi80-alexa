@@ -21,6 +21,7 @@
 "use strict";
 
 var roleArn = 'arn:aws:iam::486652066693:role/alexa-audio-player';
+//var roleArn = 'arn:aws:iam::743602823695:role/lambda_maxi80_alexa';
 var region  = 'eu-west-1';
 //var event = require('../test/input_hello_intent.json');
 //var event = require('../test/input_launch_request.auth.json');
@@ -36,43 +37,43 @@ var AWS    = require('aws-sdk');
 
 // use 'alexa' profile on locale machine to assume role
 // see http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-multiple-profiles
-var credentials = new AWS.SharedIniFileCredentials({profile: 'alexa'});
-AWS.config.credentials = credentials;
-AWS.config.region = region;
-var sts = new AWS.STS();
+// var credentials = new AWS.SharedIniFileCredentials({profile: 'alexa'});
+// AWS.config.credentials = credentials;
+// AWS.config.region = region;
+// var sts = new AWS.STS();
 
-sts.assumeRole({
-    RoleArn: roleArn,
-    RoleSessionName: 'emulambda'
-}, function(err, data) {
-    if (err) { // an error occurred
-        console.error('Can not assume role');
-        console.error(err, err.stack);
-    } else { // successful response
-        console.log('Role ' + roleArn + ' succesfully assumed.');
-        //console.log(data);
+// sts.assumeRole({
+//     RoleArn: roleArn,
+//     RoleSessionName: 'emulambda'
+// }, function(err, data) {
+//     if (err) { // an error occurred
+//         console.error('Can not assume role');
+//         console.error(err, err.stack);
+//     } else { // successful response
+//         console.log('Role ' + roleArn + ' succesfully assumed.');
+//         //console.log(data);
 
-        //update global AWS object
-        AWS.config.update({
-            accessKeyId: data.Credentials.AccessKeyId,
-            secretAccessKey: data.Credentials.SecretAccessKey,
-            sessionToken: data.Credentials.SessionToken
-        });
+//         //update global AWS object
+//         AWS.config.update({
+//             accessKeyId: data.Credentials.AccessKeyId,
+//             secretAccessKey: data.Credentials.SecretAccessKey,
+//             sessionToken: data.Credentials.SessionToken
+//         });
 
-        //make sure other modules including aws-sdk will receive this global object
-        var Module = require('module');
-        var originalRequire = Module.prototype.require;
-        Module.prototype.require = function(){
-          if (arguments[0] === 'aws-sdk'){
-            return AWS;
-          } else {
-            return originalRequire.apply(this, arguments);
-          }
-        };
+//         //make sure other modules including aws-sdk will receive this global object
+//         var Module = require('module');
+//         var originalRequire = Module.prototype.require;
+//         Module.prototype.require = function(){
+//           if (arguments[0] === 'aws-sdk'){
+//             return AWS;
+//           } else {
+//             return originalRequire.apply(this, arguments);
+//           }
+//         };
 
         console.log('**************************************************************');
         console.log('** Lambda Test Harness : Now Launching your lambda function **');
         console.log('**************************************************************');
         skill.handler(event, lambda.context(), lambda.callback);
-    }
-});
+//     }
+// });

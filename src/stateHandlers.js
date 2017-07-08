@@ -20,12 +20,16 @@ var stateHandlers = {
     'SessionEndedRequest': function () {
         // No session ended logic
     },
+    'ExceptionEncountered': function () {
+        console.log("******************* EXCEPTION **********************");
+        console.log(JSON.stringify(this.event.request, null, 2));
+        this.callback(null, null)
+    },
     'Unhandled': function () {
         var message = 'Sorry, I could not understand...';
         this.response.speak(message);
         this.emit(':responseReady');
     },
-
     'AMAZON.NextIntent': function () {
         this.response.speak('This is radio, you have to wait for next track to play.');
         this.emit(':responseReady');

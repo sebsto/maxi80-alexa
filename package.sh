@@ -3,13 +3,15 @@
 ZIPFILE=AlexaLambda.zip
 REGION=eu-west-1
 FUNCTION_NAME=alexa-maxi80
+#FUNCTION_NAME=alexa-audio-player
 HANDLER=index.handler
-#EXEC_ROLE=arn:aws:iam::401955065246:role/alexa-audio-player
+#EXEC_ROLE=arn:aws:iam::486652066693:role/lambda_basic_execution
 EXEC_ROLE=arn:aws:iam::743602823695:role/lambda_maxi80_alexa
 RUNTIME=nodejs6.10
-#ACCOUNT_ID=401955065246 # seb @ amazon
+#ACCOUNT_ID=486652066693 # seb @ amazon
 ACCOUNT_ID=743602823695 # maxi80
 PROFILE=maxi80
+#PROFILE=default
 
 pushd src
 # if the ZIP file does exist, just refresh it

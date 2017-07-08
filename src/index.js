@@ -8,7 +8,7 @@ var audioEventHandlers = require('./audioEventHandlers');
 exports.handler = function(event, context, callback){
     console.log("******************* REQUEST **********************");
     console.log(JSON.stringify(event, null, 2));
-    var skill = alexa.handler(event, context);
+    var skill = alexa.handler(event, context, callback);
     skill.appId = constants.appId;
     alexa.dynamoDBTableName = constants.dynamoDBTableName;
     skill.registerHandlers(
