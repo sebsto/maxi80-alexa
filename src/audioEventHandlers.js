@@ -10,17 +10,14 @@ var audioEventHandlers =  {
         /*
          * AudioPlayer.PlaybackStarted Directive received.
          * Confirming that requested audio file began playing.
-         * Storing details in dynamoDB using attributes.
          */
         console.log("Playback started");        
-        this.response.audioPlayerClearQueue('CLEAR_ENQUEUED');
         this.emit(':responseReady');
     },
     'PlaybackFinished' : function () {
         /*
          * AudioPlayer.PlaybackFinished Directive received.
          * Confirming that audio file completed playing.
-         * Storing details in dynamoDB using attributes.
          */
         console.log("Playback finished");
         this.response.audioPlayerClearQueue('CLEAR_ENQUEUED');
@@ -33,8 +30,9 @@ var audioEventHandlers =  {
          * Storing details in dynamoDB using attributes.
          */
         console.log("Playback stopped");
-        this.callback(null, null);
-        //this.context.succeed(true);
+
+        //do not return a response, as per https://developer.amazon.com/docs/custom-skills/audioplayer-interface-reference.html#playbackstopped
+        this.emit(':responseReady');
     },
     'PlaybackNearlyFinished' : function () {
         console.log("Playback nearly finished");
