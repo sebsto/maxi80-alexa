@@ -2,16 +2,25 @@
 
 ZIPFILE=AlexaLambda.zip
 REGION=eu-west-1
+HANDLER=index.handler
+RUNTIME=nodejs6.10
+
+CURRENT_ALIAS=blue
+#CURRENT_ALIAS=green
+
 FUNCTION_NAME=alexa-maxi80
 #FUNCTION_NAME=alexa-audio-player
-HANDLER=index.handler
+
 #EXEC_ROLE=arn:aws:iam::486652066693:role/lambda_basic_execution
 EXEC_ROLE=arn:aws:iam::743602823695:role/lambda_maxi80_alexa
-RUNTIME=nodejs6.10
+
 #ACCOUNT_ID=486652066693 # seb @ amazon
 ACCOUNT_ID=743602823695 # maxi80
+
 PROFILE=maxi80
 #PROFILE=default
+
+
 
 pushd src
 # if the ZIP file does exist, just refresh it
@@ -30,6 +39,17 @@ aws lambda update-function-code                     \
          --function-name $FUNCTION_NAME             \
          --zip-file fileb://./$ZIPFILE
 
+# CURRENT_VERSION=$(aws lambda publish-version              \
+#                        --profile $PROFILE                 \
+#                        --function-name $FUNCTION_NAME     \
+#                        --query Version --output text)
+
+#  aws lambda update-alias                            \
+#          --profile $PROFILE                         \
+#          --region $REGION                           \
+#          --function-name $FUNCTION_NAME             \
+#          --function-version $CURRENT_VERSION        \
+#          --name $CURRENT_ALIAS
 
 # to programmatically create Lambda function :
 

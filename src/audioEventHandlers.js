@@ -33,6 +33,7 @@ var audioEventHandlers =  {
 
         //do not return a response, as per https://developer.amazon.com/docs/custom-skills/audioplayer-interface-reference.html#playbackstopped
         this.emit(':responseReady');
+        //this.callback(null, null);
     },
     'PlaybackNearlyFinished' : function () {
         console.log("Playback nearly finished");
