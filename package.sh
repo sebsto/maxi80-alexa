@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo This is deprecated, use "ask deploy" instead
+exit -1
+
 ZIPFILE=AlexaLambda.zip
 REGION=eu-west-1
 HANDLER=index.handler
