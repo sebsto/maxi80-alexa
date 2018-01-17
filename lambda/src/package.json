@@ -1,10 +1,10 @@
 {
-  "name": "skill-sample-nodejs-audio-player",
+  "name": "Single_Stream_Audio_Player_Example",
   "version": "1.0.0",
-  "description": "An audio player sample skill.",
+  "description": "An simple audio player sample skill.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "Go up one directory to start the test && exit -1"
   },
   "keywords": [
     "alexa",
@@ -12,7 +12,7 @@
     "audio player"
   ],
   "author": "Amazon.com",
-  "license": "See license in ../LICENSE.txt",
+  "license": "See license in ../../LICENSE.txt",
   "dependencies": {
     "alexa-sdk": "^1.0.25"
   },

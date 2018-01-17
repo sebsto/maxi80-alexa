@@ -12,10 +12,10 @@
         "applicationId": "amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996"
       },
       "user": {
-        "userId": "amzn1.ask.account.AHIOHHIOCRUYPAJ7VNEMR5TXNDEIOU7D3W2GPQU3PXFPOM6SSJNEU7S3FTJYPYKDWV2CBR2PSQIXPYWK2GZUWL2HRLT5TZFQNEKBVXK34GUD5WRXD7X456ERUYTWMHFGN4EJ53ZD5PURFW23BNWUQW55E7KXLYVQBXVYJ25SAPSSD53GXZ7WSPHXWONI2SNDL5MQI7OQCNRTBBQ"
+        "userId": "amzn1.ask.account.123"
       },
       "device": {
-        "deviceId": "amzn1.ask.device.AFGLHLZEQHTVZVEQ4BNPHMGNGZUGNZNX4PKBN7J4NUZVHSCBTCRWANFBVYQS32AUWTS2KHSD4P4RWA6HVDDYLFI6KGVJHGFTQEC34U54LG3ZCGHBPMLC4HYUP4DVWPI22LSXOXKKKL6Z55UCSCVBZTVDH7KQ",
+        "deviceId": "amzn1.ask.device.123",
         "supportedInterfaces": {
           "AudioPlayer": {},
           "Display": {
@@ -29,11 +29,23 @@
     }
   },
   "request": {
-    "type": "AudioPlayer.PlaybackStopped",
-    "requestId": "amzn1.echo-api.request.854e64dd-9c81-470f-bd77-c205c62886e5",
+    "type": "AudioPlayer.PlaybackFailed",
+    "requestId": "amzn1.echo-api.request.123",
     "timestamp": "2017-07-08T09:49:39Z",
-    "locale": "en-US",
+    "locale": "en-GB",
     "token": "https://audio1.maxi80.com",
-    "offsetInMilliseconds": 272197
+    "error": {
+      "type": "MEDIA_ERROR_UNKNOWN",
+      "message": "custom message"
+    },
+    "currentPlaybackState": {
+      "token": "https://audio1.maxi80.com",
+      "offsetInMilliseconds": 0,
+      "playerActivity": "PLAYING"
+    }
+  },
+  "session": {
+    "attributes": {}
   }
+
 }

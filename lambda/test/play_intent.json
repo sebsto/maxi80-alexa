@@ -2,12 +2,12 @@
   "version": "1.0",
   "session": {
     "new": true,
-    "sessionId": "amzn1.echo-api.session.363fa723-5019-429f-846a-8a45f4af7248",
+    "sessionId": "amzn1.echo-api.session.123",
     "application": {
       "applicationId": "amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996"
     },
     "user": {
-      "userId": "amzn1.ask.account.AFEW32BNKZVQQG45SIMPP3VA2M6P5OB7RNJN4DR7GBK72PUXJPW3I4CYUMUHMQOVTCKIYGTLHKOZTOBOZEXP2APOBYL27CHWFKNBKXPU42NGAXK2LIEUKK4S5RBRGLBHRQRWF6DEDZCK5I4RYNNM3AKDXYOIHFSXP6V4SDECJMHGFXQNW2YUCFIEFDDS7KKZEYVDKBVUN2KMYXA"
+      "userId": "amzn1.ask.account.123"
     }
   },
   "context": {
@@ -21,7 +21,7 @@
         "applicationId": "amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996"
       },
       "user": {
-        "userId": "amzn1.ask.account.AFEW32BNKZVQQG45SIMPP3VA2M6P5OB7RNJN4DR7GBK72PUXJPW3I4CYUMUHMQOVTCKIYGTLHKOZTOBOZEXP2APOBYL27CHWFKNBKXPU42NGAXK2LIEUKK4S5RBRGLBHRQRWF6DEDZCK5I4RYNNM3AKDXYOIHFSXP6V4SDECJMHGFXQNW2YUCFIEFDDS7KKZEYVDKBVUN2KMYXA"
+        "userId": "amzn1.ask.account.123"
       },
       "device": {
         "supportedInterfaces": {
@@ -32,7 +32,7 @@
   },
   "request": {
     "type": "IntentRequest",
-    "requestId": "amzn1.echo-api.request.000c568a-5057-4db3-91f2-826c9f0eab8d",
+    "requestId": "amzn1.echo-api.request.123",
     "timestamp": "2017-03-04T19:34:05Z",
     "locale": "en-GB",
     "intent": {

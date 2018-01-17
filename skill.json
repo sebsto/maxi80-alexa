@@ -106,7 +106,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "sourceDir": "src"
+          "sourceDir": "lambda/src"
         },
         "interfaces": [
           {
