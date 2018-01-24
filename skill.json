@@ -17,9 +17,9 @@
             "france"
           ],
           "name": "Maxi 80",
-          "smallIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996/images/eyJkIjoieHV6RGJlTjZOUUxGc3hxbTJySTdpVWNKZzhnVXE4dUNxMGs5cEkzcUxjOWFnVHIyOWpDSDQzZ2dRcVBHa3hRcVZRRE16djk5TUE3dkx1OXgrcEdVRUJNeGhCSXEyR1UzY3o4NXg1ekxCZzZucEJTRUJrdmNnOWxUMGhPQ0dJaTkiLCJpdiI6ImR6YnpjanNsTkM1SXNJdzFhV2FTWHc9PSIsInYiOjF9",
+          "smallIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-108.png",
           "description": "Listen to Maxi80, the premiere 80's french web radio.\n\nMaxi80 provides a high quality sound 24/7 with the best music from the eighties.\n\nTo start, just say \"Alexa, launch Maxi80\" or \"Alexa, ask Maxi80 to start the radio\".\n\nAt anytime, you can stop the radio by saying \"Alexa, stop\"",
-          "largeIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996/images/eyJkIjoiQ01Pd3lnS2Q1YmRQK2lOdDBweWg3dmFoRUxxdnFzaWgrS21mOGo4bEtyTk1xUFpSaTJLM2diYlZwSyt1K3JQYmhGZHhwTzRnUVJzU1BsK2VuVjJDMDdOWEFoZWd6SngvKzAxZU9xcGZiYmFZTlRqVVhmTU1rd05sZ2lhb1lCdjhpUGt6SWkybFY3MTJYdlpybW9yQWRnPT0iLCJpdiI6IlV1U3hzOENucnlldzhIb2Zia1JnNWc9PSIsInYiOjF9"
+          "largeIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-512.png"
         },
         "en-CA": {
           "summary": "Listen to Maxi 80, the best music from the eighties.",
@@ -36,9 +36,9 @@
             "france"
           ],
           "name": "Maxi 80",
-          "smallIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996/images/eyJkIjoieHV6RGJlTjZOUUxGc3hxbTJySTdpVWNKZzhnVXE4dUNxMGs5cEkzcUxjOWFnVHIyOWpDSDQzZ2dRcVBHa3hRcVZRRE16djk5TUE3dkx1OXgrcEdVRUJNeGhCSXEyR1UzY3o4NXg1ekxCZzZucEJTRUJrdmNnOWxUMGhPQ0dJaTkiLCJpdiI6ImR6YnpjanNsTkM1SXNJdzFhV2FTWHc9PSIsInYiOjF9",
+          "smallIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-108.png",
           "description": "Listen to Maxi80, the premiere 80's french web radio.\n\nMaxi80 provides a high quality sound 24/7 with the best music from the eighties.\n\nTo start, just say \"Alexa, launch Maxi80\" or \"Alexa, ask Maxi80 to start the radio\".\n\nAt anytime, you can stop the radio by saying \"Alexa, stop\"",
-          "largeIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996/images/eyJkIjoiQ01Pd3lnS2Q1YmRQK2lOdDBweWg3dmFoRUxxdnFzaWgrS21mOGo4bEtyTk1xUFpSaTJLM2diYlZwSyt1K3JQYmhGZHhwTzRnUVJzU1BsK2VuVjJDMDdOWEFoZWd6SngvKzAxZU9xcGZiYmFZTlRqVVhmTU1rd05sZ2lhb1lCdjhpUGt6SWkybFY3MTJYdlpybW9yQWRnPT0iLCJpdiI6IlV1U3hzOENucnlldzhIb2Zia1JnNWc9PSIsInYiOjF9"
+          "largeIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-512.png"
         },
         "en-IN": {
           "summary": "Listen to Maxi 80, the best music from the eighties.",
@@ -55,9 +55,9 @@
             "france"
           ],
           "name": "Maxi 80",
-          "smallIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996/images/eyJkIjoieHV6RGJlTjZOUUxGc3hxbTJySTdpVWNKZzhnVXE4dUNxMGs5cEkzcUxjOWFnVHIyOWpDSDQzZ2dRcVBHa3hRcVZRRE16djk5TUE3dkx1OXgrcEdVRUJNeGhCSXEyR1UzY3o4NXg1ekxCZzZucEJTRUJrdmNnOWxUMGhPQ0dJaTkiLCJpdiI6ImR6YnpjanNsTkM1SXNJdzFhV2FTWHc9PSIsInYiOjF9",
+          "smallIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-108.png",
           "description": "Listen to Maxi80, the premiere 80's french web radio.\n\nMaxi80 provides a high quality sound 24/7 with the best music from the eighties.\n\nTo start, just say \"Alexa, launch Maxi80\" or \"Alexa, ask Maxi80 to start the radio\".\n\nAt anytime, you can stop the radio by saying \"Alexa, stop\"",
-          "largeIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996/images/eyJkIjoiQ01Pd3lnS2Q1YmRQK2lOdDBweWg3dmFoRUxxdnFzaWgrS21mOGo4bEtyTk1xUFpSaTJLM2diYlZwSyt1K3JQYmhGZHhwTzRnUVJzU1BsK2VuVjJDMDdOWEFoZWd6SngvKzAxZU9xcGZiYmFZTlRqVVhmTU1rd05sZ2lhb1lCdjhpUGt6SWkybFY3MTJYdlpybW9yQWRnPT0iLCJpdiI6IlV1U3hzOENucnlldzhIb2Zia1JnNWc9PSIsInYiOjF9"
+          "largeIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-512.png"
         },
         "en-AU": {
           "summary": "Listen to Maxi 80, the best music from the eighties.",
@@ -74,9 +74,9 @@
             "france"
           ],
           "name": "Maxi 80",
-          "smallIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996/images/eyJkIjoieHV6RGJlTjZOUUxGc3hxbTJySTdpVWNKZzhnVXE4dUNxMGs5cEkzcUxjOWFnVHIyOWpDSDQzZ2dRcVBHa3hRcVZRRE16djk5TUE3dkx1OXgrcEdVRUJNeGhCSXEyR1UzY3o4NXg1ekxCZzZucEJTRUJrdmNnOWxUMGhPQ0dJaTkiLCJpdiI6ImR6YnpjanNsTkM1SXNJdzFhV2FTWHc9PSIsInYiOjF9",
+          "smallIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-108.png",
           "description": "Listen to Maxi80, the premiere 80's french web radio.\n\nMaxi80 provides a high quality sound 24/7 with the best music from the eighties.\n\nTo start, just say \"Alexa, launch Maxi80\" or \"Alexa, ask Maxi80 to start the radio\".\n\nAt anytime, you can stop the radio by saying \"Alexa, stop\"",
-          "largeIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996/images/eyJkIjoiQ01Pd3lnS2Q1YmRQK2lOdDBweWg3dmFoRUxxdnFzaWgrS21mOGo4bEtyTk1xUFpSaTJLM2diYlZwSyt1K3JQYmhGZHhwTzRnUVJzU1BsK2VuVjJDMDdOWEFoZWd6SngvKzAxZU9xcGZiYmFZTlRqVVhmTU1rd05sZ2lhb1lCdjhpUGt6SWkybFY3MTJYdlpybW9yQWRnPT0iLCJpdiI6IlV1U3hzOENucnlldzhIb2Zia1JnNWc9PSIsInYiOjF9"
+          "largeIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-512.png"
         },
         "en-GB": {
           "summary": "Listen to Maxi 80, the best music from the eighties.",
@@ -93,13 +93,32 @@
             "france"
           ],
           "name": "Maxi 80",
-          "smallIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996/images/eyJkIjoiN2J1eGNrQ1lnWXV3Q3Y2Mm01V1hDRkxlUEI5NUJNRVFCTFRHakdiejFtNlhEUHZQRHVmSlU5S2g3TmFQUGUvS3pkcWhZS0tycm9PMWpLRlBhNjNEKzNVZmFVRHpRUFNnSWFObGZDT1d1clNYWHJWOVQrUFExSVdSNXNmUGVqdTciLCJpdiI6ImVna0RIQU5OMlh1bmF6NDlRRDlQYkE9PSIsInYiOjF9",
+          "smallIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-108.png",
           "description": "Listen to Maxi80, the premiere 80's french web radio.\n\nMaxi80 provides a high quality sound 24/7 with the best music from the eighties.\n\nMaxi80 is a french speaking radio - please expect DJ's, ads and Alexa cards to be published in french.\n\nTo start, just say \"Alexa, launch Maxi80\" or \"Alexa, ask Maxi80 to start the radio\".\n\nAt anytime, you can stop the radio by saying \"Alexa, stop\"",
-          "largeIconUri": "https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.6f354531-e96b-4b80-b446-1b77bce73996/images/eyJkIjoidUtiZDZKeThqeklCNitpR1BLOW5RK2NLQkJPdURHRmtBMFdadlNobFZJcnZUK1B1bTFrNUxXOCtLVGFiaExNSmJvZ2hXdzdFaXVPcFFrRDNVVmFCWnRpV2ZDVmJPa2VwSHZ1REl2V0xYSjRBUlVGaXpiZ3B2eERiUjUvVjRrdHpJMGZscGw0eCt2NTlFVEROZ1labHNRPT0iLCJpdiI6InRFTDRyVERqQ3Q0ZVp0L211elU5anc9PSIsInYiOjF9"
+          "largeIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-512.png"
+        },
+        "fr-FR": {
+          "summary": "Ecoutez Maxi 80, la meilleure musique des années 80.",
+          "examplePhrases": [
+            "Alexa, lance Maxi80",
+            "Alexa, démarre Maxi80",
+            "Alexa, demande à Maxi80 de lancer la radio"
+          ],
+          "keywords": [
+            "musique",
+            "streaming",
+            "quatre-vingt",
+            "radio",
+            "france"
+          ],
+          "name": "Maxi 80",
+          "smallIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-108.png",
+          "description": "Ecoutez Maxi 80, la première radio des années 80 en france.\n\nMaxi 80 vous permets d'écouter 24 heure sur 24 la meilleur musique des années 80 en haute fidelité.\n\nPour démarrez, dites \"Alexa, démarre Maxi 80\" ou \"Alexa, lance Maxi 80\".\n\nA tout moment, vous pouvez arrêter (\"Alexa, stop\") ou changer le volume (\"Alexa, augmente le volume\" ou \"Alexa, diminue le volume\")",
+          "largeIconUri": "http://alexa.maxi80.com.s3-website-eu-west-1.amazonaws.com/assets/alexa-logo-512.png"
         }
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "8/7/2017 :\nOnly change in Lambda function ARN to use versioning and aliases\n\nInitial Instructions:\nI am the official developer for Maxi 80 app, I developed the iOS and Android App.\n\nI submitted the authorisation letter on caseID 2113239251\n\nHere is a copy :\n\nFrom: \"Webradio Maxi80.com\" <info@maxi80.com>\nTo: sebastien.stormacq@gmail.com\nSubject: Authorization to use the Maxi80.com trademark on Amazon services\n\nI, Lionel Soriano, President of Nouvtech-Association Nouvelles Technologies, owner of maxi80.com, hereby authorises Mr Sebastien Stormacq to publish the Maxi80 Alexa Skill.  \n\nI confirm I granted Sebastien Stormacq perpetual rights to use the logo, name and audio stream from maxi80.com for the Alexa skill, in the US and other countries where Alexa is or will be available.\n\n\n\nMontpellier, March 14th 2017\n\n\n\nLionel SORIANO,\n\nNouvtech Association Nouvelles Technologies",
+      "testingInstructions": "1/17/2018\nAdd en-CA locale and sync code with audio streamer example https://github.com/alexa/skill-sample-nodejs-audio-player/tree/mainline/single-stream\n\n8/7/2017 :\nOnly change in Lambda function ARN to use versioning and aliases\n\nInitial Instructions:\nI am the official developer for Maxi 80 app, I developed the iOS and Android App.\n\nI submitted the authorisation letter on caseID 2113239251\n\nHere is a copy :\n\nFrom: \"Webradio Maxi80.com\" <info@maxi80.com>\nTo: sebastien.stormacq@gmail.com\nSubject: Authorization to use the Maxi80.com trademark on Amazon services\n\nI, Lionel Soriano, President of Nouvtech-Association Nouvelles Technologies, owner of maxi80.com, hereby authorises Mr Sebastien Stormacq to publish the Maxi80 Alexa Skill.  \n\nI confirm I granted Sebastien Stormacq perpetual rights to use the logo, name and audio stream from maxi80.com for the Alexa skill, in the US and other countries where Alexa is or will be available.\n\n\n\nMontpellier, March 14th 2017\n\n\n\nLionel SORIANO,\n\nNouvtech Association Nouvelles Technologies",
       "category": "STREAMING_SERVICE",
       "distributionCountries": []
     },

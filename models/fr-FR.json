@@ -1,0 +1,61 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "maxi quatre vingt",
+      "intents": [
+        {
+          "name": "PlayAudio",
+          "samples": [
+            "joue",
+            "démarre",
+            "joue maxi quatre vingt",
+            "joue maxi quatre vingt s'il te plait",
+            "lance maxi quatre vingt",
+            "lance maxi quatre vingt s'il te plait",
+            "lance la radio",
+            "lance la radio s'il te plait",
+            "joue la radio",
+            "joue la radio s'il te plait",
+            "lance le son",
+            "lance le son s'il te plait",
+            "joue le son",
+            "joue le son s'il te plait",
+            "lance la musique",
+            "lance la musique s'il te plait",
+            "joue la musique",
+            "joue la musique s'il te plait"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent"
+        },
+        {
+          "name": "AMAZON.ResumeIntent"
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "aide moi s'il te plait",
+            "que dois je faire",
+            "et ensuite",
+            "comment est ce que je peux écouter maxi quatre vingt",
+            "comment écouter la musique",
+            "dis moi comment arrêter",
+            "comment on arrête",
+            "comment arrêter",
+            "comment ca s'arrête"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent"
+        },
+        {
+          "name": "AMAZON.CancelIntent"
+        },
+        {
+          "name": "AMAZON.StartOverIntent"
+        }
+      ]
+    }
+  }
+}
