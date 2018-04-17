@@ -23,15 +23,15 @@ var controller = function () {
              *      Next/Previous commands issued.
              */
 
-             /*
-                https://developer.amazon.com/docs/custom-skills/audioplayer-interface-reference.html#play
-                REPLACE_ALL: Immediately begin playback of the specified stream, and replace current and enqueued streams.             
-             */
+            /*
+               https://developer.amazon.com/docs/custom-skills/audioplayer-interface-reference.html#play
+               REPLACE_ALL: Immediately begin playback of the specified stream, and replace current and enqueued streams.             
+            */
 
             if (canThrowCard.call(this)) {
-                var cardTitle   = cardData.subtitle;
+                var cardTitle = cardData.subtitle;
                 var cardContent = cardData.cardContent;
-                var cardImage   = cardData.image;
+                var cardImage = cardData.image;
                 this.response.cardRenderer(cardTitle, cardContent, cardImage);
             }
 
@@ -40,13 +40,31 @@ var controller = function () {
             } else {
                 this.response.audioPlayerPlay('REPLACE_ALL', url, url, null, 0);
             }
+
+            this.response._responseObject.response.directives[0].audioItem['metadata'] = {
+                title: cardData.subtitle,
+                subtitle: cardData.cardContent,
+                art: {
+                    contentDescription: cardData.title,
+                    sources: [{
+                        url: "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-artwork-720.png"
+                    }]
+                },
+                backgroundImage: {
+                    contentDescription: cardData.title,
+                    sources: [{
+                        url: "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-artwork-1200.png"
+                    }]
+                }
+            };
+
             this.emit(':responseReady');
         },
         playLater: function (url) {
-             /*
-                https://developer.amazon.com/docs/custom-skills/audioplayer-interface-reference.html#play
-                REPLACE_ENQUEUED: Replace all streams in the queue. This does not impact the currently playing stream. 
-              */
+            /*
+               https://developer.amazon.com/docs/custom-skills/audioplayer-interface-reference.html#play
+               REPLACE_ENQUEUED: Replace all streams in the queue. This does not impact the currently playing stream. 
+             */
             this.response.audioPlayerPlay('REPLACE_ENQUEUED', url, url, null, 0);
             this.emit(':responseReady');
         },
@@ -58,12 +76,12 @@ var controller = function () {
             this.response.speak(text).audioPlayerStop();
             this.emit(':responseReady');
         },
-        clear: function() {
+        clear: function () {
             /*
              * Clear the queue and stop the player
              */
             this.response.audioPlayerClearQueue('CLEAR_ENQUEUED');
-            this.emit(':responseReady');            
+            this.emit(':responseReady');
         }
     }
 }();
