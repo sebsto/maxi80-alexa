@@ -115,7 +115,7 @@ export class Assertion {
         expect(app.audioItem.stream).to.have.property("url");
         expect(app.audioItem.stream.url).to.match(/^https:\/\//);
         expect(app.audioItem.stream).to.have.property("token");
-        expect(app.audioItem.stream).to.have.property("expectedPreviousToken");
+        expect(app.audioItem.stream).not.to.have.property("expectedPreviousToken");
         expect(app.audioItem.stream).to.have.property("offsetInMilliseconds");
         expect(app.audioItem.stream.offsetInMilliseconds).to.equal(0);
           

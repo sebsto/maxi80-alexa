@@ -70,7 +70,7 @@ describe('Audio Player Test : Play Intent with radio stream', function () {
     let streamURL = audioData(request.request).url;
     expect(app.audioItem.stream.url).to.be.equal(streamURL);
     expect(app.audioItem.stream).to.have.property("token");
-    expect(app.audioItem.stream).to.have.property("expectedPreviousToken");
+    expect(app.audioItem.stream).not.to.have.property("expectedPreviousToken");
     expect(app.audioItem.stream).to.have.property("offsetInMilliseconds");
     expect(app.audioItem.stream.offsetInMilliseconds).to.equal(0);
 

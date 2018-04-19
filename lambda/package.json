@@ -4,7 +4,7 @@
   "description": "Maxi 80 Alexa Skill",
   "main": "index.ts",
   "scripts": {
-    "test": "AWS_REGION=eu-west-1 AWS_PROFILE=maxi80 /usr/local/bin/mocha -r ts-node/register test/*Test.ts"
+    "test": "AWS_REGION=eu-west-1 AWS_PROFILE=maxi80 /usr/local/bin/mocha -r ts-node/register test/test*.ts"
   },
   "keywords": [
     "alexa",

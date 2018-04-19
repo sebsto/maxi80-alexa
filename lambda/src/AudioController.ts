@@ -25,7 +25,7 @@ class AudioController {
 
         // we are using url as token as they are all unique
         result
-            .addAudioPlayerPlayDirective('REPLACE_ALL', url, url, offset, url)
+            .addAudioPlayerPlayDirective('REPLACE_ALL', url, url, offset)
             .withShouldEndSession(true);
 
         if (text) {
@@ -68,7 +68,7 @@ class AudioController {
          */
         const result = ResponseFactory.init();
         result
-            .addAudioPlayerPlayDirective('REPLACE_ALL', url, url, 0, url)
+            .addAudioPlayerPlayDirective('REPLACE_ALL', url, url, 0)
             .withShouldEndSession(true);
 
         return result.getResponse();
