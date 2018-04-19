@@ -1,4 +1,6 @@
 node_modules
+dist
+tools
 .idea
 *.zip
 amazon.pdf

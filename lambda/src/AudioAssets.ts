@@ -1,5 +1,6 @@
 'use strict';
 
+import { interfaces,Response,Request, IntentRequest} from 'ask-sdk-model';
 let en = {
     card: {
         title: 'Maxi 80',
@@ -37,13 +38,12 @@ let globalAudioData = {
         'fr-FR': fr
 };
 
-function audioData(request) {
+export function audioData(request : Request) {
     let DEFAULT_LOCALE = 'en-US';
-    var locale = request === undefined ? DEFAULT_LOCALE : request.locale;
+    var locale = request.locale;
     if (locale === undefined) { 
         locale = DEFAULT_LOCALE
     };
     return globalAudioData[locale];    
 }
 
-module.exports = audioData;
