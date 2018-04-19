@@ -8,7 +8,7 @@ export const Constants = {
     debug : true,
 
     // when developing offline, use local dynamodb (do not forget to start the DB and to create the table)
-    useLocalDB : true, 
+    useLocalDB : false, 
 
     // when defined, it tries to read / write DynamoDB to save the last time Jingle was played for that user
     // this allows to avoid to repaet the jingle at each invocation 
