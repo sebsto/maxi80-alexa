@@ -45,7 +45,7 @@ export const AudioHandler: IHandler = {
          */
         console.log("Playback nearly finished");
         const request = <interfaces.audioplayer.PlaybackFailedRequest>input.requestEnvelope.request;
-        return Promise.resolve(audio.playLater(audioData(request).url));
+        return Promise.resolve(audio.playLater(audioData(request).url, audioData(request).card));
     },
     'AudioPlayer.PlaybackFailed': async function (input: HandlerInput): Promise<Response> {
         /*
@@ -54,6 +54,6 @@ export const AudioHandler: IHandler = {
          */
         const request = <interfaces.audioplayer.PlaybackFailedRequest>input.requestEnvelope.request;
         console.log("Playback Failed : " + JSON.stringify(request.error, null, 2));
-        return Promise.resolve(audio.play(audioData(request).url, 0));
+        return Promise.resolve(audio.play(audioData(request).url, 0, null, audioData(request).card));
     }
 };

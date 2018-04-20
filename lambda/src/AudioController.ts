@@ -5,6 +5,30 @@ import { ui, Response, interfaces } from 'ask-sdk-model';
 
 class AudioController {
 
+    addScreenBackground(cardData : ui.StandardCard, response : Response) : Response {
+        if (cardData) {
+
+            const directive = <interfaces.audioplayer.PlayDirective>response.directives[0]
+            directive.audioItem['metadata'] = {
+                title: cardData.title,
+                subtitle: cardData.text,
+                art: {
+                    contentDescription: cardData.title,
+                    sources: [{
+                        url: "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-artwork-720.png"
+                    }]
+                },
+                backgroundImage: {
+                    contentDescription: cardData.title,
+                    sources: [{
+                        url: "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-artwork-1200.png"
+                    }]
+                }
+            };
+        }
+        return response;
+    }
+
     play(url: string, offset: number, text?: string, cardData?: ui.StandardCard): Response {
         /*
              *  Using the function to begin playing audio when:
@@ -32,36 +56,14 @@ class AudioController {
             result.speak(text);
         }
 
-        const response = result.getResponse();
-
         // add support for radio meta data.  
         // this is not supported by the SDK yet, so it should be handled manually
-        if (cardData) {
-
-            const directive = <interfaces.audioplayer.PlayDirective>response.directives[0]
-            directive.audioItem['metadata'] = {
-                title: cardData.title,
-                subtitle: cardData.text,
-                art: {
-                    contentDescription: cardData.title,
-                    sources: [{
-                        url: "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-artwork-720.png"
-                    }]
-                },
-                backgroundImage: {
-                    contentDescription: cardData.title,
-                    sources: [{
-                        url: "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-artwork-1200.png"
-                    }]
-                }
-            };
-        }
-
+        const response = this.addScreenBackground(cardData, result.getResponse());
         return response;
     }
 
 
-    playLater(url: string): Response {
+    playLater(url: string, cardData: ui.StandardCard): Response {
         /*
            https://developer.amazon.com/docs/custom-skills/audioplayer-interface-reference.html#play
            REPLACE_ENQUEUED: Replace all streams in the queue. This does not impact the currently playing stream. 
@@ -71,7 +73,10 @@ class AudioController {
             .addAudioPlayerPlayDirective('REPLACE_ALL', url, url, 0)
             .withShouldEndSession(true);
 
-        return result.getResponse();
+        // add support for radio meta data.  
+        // this is not supported by the SDK yet, so it should be handled manually
+        const response = this.addScreenBackground(cardData, result.getResponse());
+        return response;
     }
 
     stop(text: string): Response {
