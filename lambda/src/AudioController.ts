@@ -15,13 +15,13 @@ class AudioController {
                 art: {
                     contentDescription: cardData.title,
                     sources: [{
-                        url: "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-artwork-720.png"
+                        url: "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-mm-artwork-480.png"
                     }]
                 },
                 backgroundImage: {
                     contentDescription: cardData.title,
                     sources: [{
-                        url: "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-artwork-1200.png"
+                        url: "https://s3-eu-west-1.amazonaws.com/alexa.maxi80.com/assets/alexa-mm-artwork-1024.png"
                     }]
                 }
             };
