@@ -1,16 +1,9 @@
 'use strict';
 
 import 'mocha';
-import { expect, should } from 'chai';
-
+import { expect } from 'chai';
 import { RequestEnvelope, ResponseEnvelope } from 'ask-sdk-model';
-
 import { handler as skill } from '../src/index';
-import { Constants } from '../src/Constants';
-import { strings } from '../src/Strings';
-import { ddb } from '../src/DDBController';
-import { i18n } from '../src/utils/I18N';
-import { audioData } from '../src/AudioAssets';
 
 import * as r from './request/skill_enabled.json'; // tslint:disable-line
 const request: RequestEnvelope = <RequestEnvelope>r;
@@ -18,7 +11,6 @@ const request: RequestEnvelope = <RequestEnvelope>r;
 import { Assertion } from './utils/Assertion';
 const A = new Assertion();
 
-const USER_ID = "amzn1.ask.account.123";
 let skill_response: ResponseEnvelope;
 
 describe('Maxi80 : Skill Disabled', function () {

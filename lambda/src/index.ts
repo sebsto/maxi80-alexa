@@ -1,6 +1,6 @@
 'use strict';
 
-import { Skill, SkillBuilders, CustomSkillFactory } from 'ask-sdk-core';
+import { SkillBuilders } from 'ask-sdk-core';
 import { RequestEnvelope, ResponseEnvelope } from 'ask-sdk-model';
 import { IntentHandler } from './IntentHandlers';
 import { AudioHandler } from './AudioHandlers';
