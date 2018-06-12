@@ -1,7 +1,7 @@
 'use strict';
 
 import 'mocha';
-import { expect, should } from 'chai';
+import { expect } from 'chai';
 
 import { interfaces, RequestEnvelope, ResponseEnvelope } from 'ask-sdk-model';
 
