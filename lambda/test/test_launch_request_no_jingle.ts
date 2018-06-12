@@ -18,7 +18,7 @@ const A = new Assertion();
 const USER_ID = "amzn1.ask.account.123";
 let skill_response: ResponseEnvelope;
 
-describe('Audio Player Test : LaunchRequest', function () {
+describe('Audio Player Test : LaunchRequest No Jingle', function () {
 
   // pre-requisites
   before(() => {
