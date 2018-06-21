@@ -1,0 +1,58 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "maxi ottanta",
+      "intents": [
+        {
+          "name": "PlayAudio",
+          "samples": [
+            "metti la radio",
+            "metti la radio per favore",
+            "mette la radio",
+            "mette la radio per favore",
+            "accendi la radio",
+            "accendi la radio per favore",
+            "metti maxi ottanta",
+            "metti maxi ottanta per favore",
+            "mette maxi ottanta",
+            "mette maxi ottanta per favore",
+            "accendi maxi ottanta",
+            "accendi maxi ottanta per favore",
+            "metti la musica",
+            "metti la musica per favore",
+            "mette la musica",
+            "mette la musica per favore",
+            "accendi la musica",
+            "accendi la musica per favore"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent"
+        },
+        {
+          "name": "AMAZON.ResumeIntent"
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "come fermarsi",
+            "come posso smettere",
+            "aiutami",
+            "come ascoltare la radio",
+            "come ascoltare maxi ottanta",
+            "come ascoltare la musica"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent"
+        },
+        {
+          "name": "AMAZON.CancelIntent"
+        },
+        {
+          "name": "AMAZON.StartOverIntent"
+        }
+      ]
+    }
+  }
+}
