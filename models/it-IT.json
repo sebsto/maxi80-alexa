@@ -6,6 +6,10 @@
         {
           "name": "PlayAudio",
           "samples": [
+            "giocare",
+            "giocare per favore",
+            "avviare la radio",
+            "avviare la radio per favore",
             "metti la radio",
             "metti la radio per favore",
             "mette la radio",
@@ -44,7 +48,10 @@
           ]
         },
         {
-          "name": "AMAZON.StopIntent"
+          "name": "AMAZON.StopIntent",
+          "samples" : [
+            "puoi mettere in pausa"
+          ]
         },
         {
           "name": "AMAZON.CancelIntent"
