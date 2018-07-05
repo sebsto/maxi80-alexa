@@ -14,7 +14,35 @@
           }
         }
       },
-      "in_skill_products": []
+      "in_skill_products": [],
+      "resources": {
+        "interactionModel": {
+          "en-AU": {
+            "eTag": "8dd0c8bdb11b35ae8c8d6922a01b13e6"
+          },
+          "en-CA": {
+            "eTag": "8dd0c8bdb11b35ae8c8d6922a01b13e6"
+          },
+          "en-IN": {
+            "eTag": "8dd0c8bdb11b35ae8c8d6922a01b13e6"
+          },
+          "es-ES": {
+            "eTag": "2fbb750d00a765277db2f7f2c9234062"
+          },
+          "en-GB": {
+            "eTag": "8dd0c8bdb11b35ae8c8d6922a01b13e6"
+          },
+          "fr-FR": {
+            "eTag": "c26efbc558a1fd442e9d03c580264027"
+          },
+          "en-US": {
+            "eTag": "8dd0c8bdb11b35ae8c8d6922a01b13e6"
+          },
+          "it-IT": {
+            "eTag": "d1e156a484f27359ae6a090375f9d1d6"
+          }
+        }
+      }
     }
   }
 }
