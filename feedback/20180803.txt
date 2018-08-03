@@ -1,0 +1,38 @@
+Issues with skill in French
+___________________________________________________________________________________
+
+1. The description displayed in the skill’s detail card must contain accurate information so users are well informed on how to use the skill.
+ 
+Please make sure that the short description is free from any grammar or punctuation errors and modify it as following:
+Actual: "Ecoutez Maxi 80, la meilleure musique des années 80."
+Expected: "Écoutez Maxi 80, la meilleure musique des années 80."
+ 
+Also, please modify the long description as well.
+Actual: "Ecoutez Maxi 80, la première radio des années 80 en France."
+Expected: "Écoutez Maxi 80, la meilleure musique des années 80."
+ 
+Actual: "A tout moment, vous pouvez arrêter ("Alexa, stop") ou changer le volume ("Alexa, augmente le volume" ou "Alexa, diminue le volume")"
+Expected: "À tout moment vous pouvez arrêter ("Alexa, stop") ou changer le volume ("Alexa, augmente le volume" ou "Alexa, diminue le volume")"
+ 
+Please see test case 3.2 from our Submission Checklist for guidance on skill descriptions.
+ 
+___________________________________________________________________________________
+
+Issues with skill in Spanish (Spain)
+___________________________________________________________________________________
+
+1. The description displayed in the skill’s detail card must contain accurate information so users are well informed on how to use the skill.
+ 
+Please modify the description as following:
+ 
+Actual: "Para empezar, solo tienes que decir "Alexa, abre Maxi80" or "Alexa, pide a Maxi80 poner la radio"
+Expected: "Para empezar, solo tienes que decir "Alexa, abre Maxi80" o "Alexa, pide a Maxi80 poner la radio"
+ 
+Please see test case 3.2 from our Submission Checklist for guidance on skill descriptions.
+
+___________________________________________________________________________________ 
+
+Please do not reply to this e-mail. To share specific feedback or receive additional clarity on your skill's certification results, please use our contact form here. Please note that you will be directed to a login page before submitting your feedback. Providing your skill's name and application ID will assist us in helping you as quickly as possible.
+For other general questions, visit our Amazon-moderated forums or sign up to attend our Alexa Skills Kit weekly office hours.
+Additional links: Submission Checklist
+ 
