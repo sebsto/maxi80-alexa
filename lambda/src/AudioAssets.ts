@@ -59,6 +59,7 @@ let globalAudioData = {
         'en-IN': en,
         'en-AU': en,
         'fr-FR': fr,
+        'fr-CA': fr,
         'es-ES': es,
         'es-MX': es,
         'it-IT': it

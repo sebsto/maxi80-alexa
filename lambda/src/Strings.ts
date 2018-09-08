@@ -53,6 +53,7 @@ export const strings = {
     "en-CA": EnglishStrings,
     "en-AU": EnglishStrings,
     "fr-FR": FrenchStrings,
+    "fr-CA": FrenchStrings,
     "it-IT": ItalianStrings,
     "es-ES": SpanishStrings,
     "es-MX": SpanishStrings
