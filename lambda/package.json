@@ -1,11 +1,11 @@
 {
   "name": "Maxi_80_Alexa_Skill",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Maxi 80 Alexa Skill",
   "main": "index.ts",
   "scripts": {
     "clean": "rm -rf dist/*",
-    "build": "tsc",
+    "build": "node_modules/typescript/bin/tsc",
     "test": "AWS_REGION=eu-west-1 AWS_PROFILE=maxi80 /usr/local/bin/mocha -r ts-node/register test/test*.ts"
   },
   "keywords": [
