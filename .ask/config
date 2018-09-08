@@ -18,37 +18,48 @@
       "resources": {
         "interactionModel": {
           "en-AU": {
-            "eTag": "8dd0c8bdb11b35ae8c8d6922a01b13e6"
+            "eTag": "a45a0c69f1cbd4682c9b09c20e1f86a4"
           },
           "en-CA": {
-            "eTag": "8dd0c8bdb11b35ae8c8d6922a01b13e6"
+            "eTag": "a45a0c69f1cbd4682c9b09c20e1f86a4"
           },
           "en-IN": {
-            "eTag": "8dd0c8bdb11b35ae8c8d6922a01b13e6"
+            "eTag": "a45a0c69f1cbd4682c9b09c20e1f86a4"
           },
           "es-ES": {
-            "eTag": "2fbb750d00a765277db2f7f2c9234062"
+            "eTag": "b1b8ec8053a719a61e90406b286943f3"
           },
           "en-GB": {
-            "eTag": "8dd0c8bdb11b35ae8c8d6922a01b13e6"
+            "eTag": "a45a0c69f1cbd4682c9b09c20e1f86a4"
           },
           "fr-FR": {
-            "eTag": "c26efbc558a1fd442e9d03c580264027"
+            "eTag": "89e974c431c2ef67ca035223e55c37e7"
           },
           "en-US": {
-            "eTag": "8dd0c8bdb11b35ae8c8d6922a01b13e6"
+            "eTag": "a45a0c69f1cbd4682c9b09c20e1f86a4"
           },
           "it-IT": {
-            "eTag": "d1e156a484f27359ae6a090375f9d1d6"
+            "eTag": "b22d4747aeced8d1c3a1ada6e3396c8b"
+          },
+          "es-MX": {
+            "eTag": "b1b8ec8053a719a61e90406b286943f3"
+          },
+          "fr-CA": {
+            "eTag": "89e974c431c2ef67ca035223e55c37e7"
           }
         },
         "manifest": {
-          "eTag": "e67b893a9c29a55539520b9cb0156d5d"
+          "eTag": "d9177b7a898b2fd0adb4873707413086"
         },
         "lambda": [
           {
             "arn": "arn:aws:lambda:eu-west-1:743602823695:function:alexa-maxi80",
-            "revisionId": "84abf932-909e-44f7-9ea5-609c78e851b9"
+            "revisionId": "d99005c3-d759-48ea-b94b-34139e6aa275",
+            "functionName": "arn:aws:lambda:eu-west-1:743602823695:function:alexa-maxi80",
+            "awsRegion": "us-east-1",
+            "alexaUsage": [
+              "custom/default"
+            ]
           }
         ]
       }
