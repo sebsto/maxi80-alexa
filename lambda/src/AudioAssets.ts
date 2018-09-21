@@ -1,6 +1,6 @@
 'use strict';
 
-import { interfaces,Response,Request, IntentRequest} from 'ask-sdk-model';
+import { Response, Request, IntentRequest, LaunchRequest } from 'ask-sdk-model';
 let en = {
     card: {
         title: 'Maxi 80',
@@ -67,7 +67,7 @@ let globalAudioData = {
 
 export function audioData(request : Request) {
     let DEFAULT_LOCALE = 'en-US';
-    var locale = request.locale;
+    var locale = (<IntentRequest | LaunchRequest>request).locale;
     if (locale === undefined) { 
         locale = DEFAULT_LOCALE
     };

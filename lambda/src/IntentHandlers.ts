@@ -1,7 +1,7 @@
 'use strict';
 
 import { HandlerInput, ResponseFactory } from 'ask-sdk';
-import { Response } from 'ask-sdk-model';
+import { Response, IntentRequest } from 'ask-sdk-model';
 
 import { IHandler } from './utils/iHandler';
 import { Constants } from './Constants';
@@ -119,7 +119,7 @@ export const IntentHandler: IHandler = {
 
         const user_id = input.requestEnvelope.session.user.userId;
         const request = input.requestEnvelope.request;
-        const locale = input.requestEnvelope.request.locale;
+        const locale = (<IntentRequest>input.requestEnvelope.request).locale;
 
         //is the jingle URL defined ?
         if (audioData(request).startJingle) {
