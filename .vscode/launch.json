@@ -4,14 +4,14 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "node",
             "request": "launch",
             "name": "Mocha Tests Current File",
             "program": "${workspaceFolder}/lambda/node_modules/mocha/bin/_mocha",
+            "cwd" : "${workspaceFolder}/lambda",
             "args": [
-                "-u",
-                "tdd",
                 "--timeout",
                 "999999",
                 "--colors",
@@ -19,6 +19,10 @@
                 "ts-node/register",
                 "${file}"
             ],
+            "env": {
+                "AWS_REGION" : "eu-west-1",
+                "AWS_PROFILE" : "maxi80"
+            },
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
@@ -26,16 +30,19 @@
             "request": "launch",
             "name": "Mocha Tests",
             "program": "${workspaceFolder}/lambda/node_modules/mocha/bin/_mocha",
+            "cwd" : "${workspaceFolder}/lambda",
             "args": [
-                "-u",
-                "tdd",
                 "--timeout",
                 "999999",
                 "--colors",
                 "-r",
                 "ts-node/register",
-                "${workspaceFolder}/lambda/test/*Test.ts"
+                "${workspaceFolder}/lambda/test/test_*.ts"
             ],
+            "env": {
+                "AWS_REGION" : "eu-west-1",
+                "AWS_PROFILE" : "maxi80"
+            },
             "internalConsoleOptions": "openOnSessionStart"
         }
     ]
