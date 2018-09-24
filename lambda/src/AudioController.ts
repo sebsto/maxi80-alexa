@@ -86,8 +86,11 @@ class AudioController {
          */
         const result = ResponseFactory.init();
         result
-            .addAudioPlayerStopDirective()
-            .speak(text);
+            .addAudioPlayerStopDirective();
+
+        if (text) {
+           result.speak(text);
+        }
 
         return result.getResponse();
     }

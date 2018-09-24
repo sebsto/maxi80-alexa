@@ -205,12 +205,17 @@ export const IntentHandler: IHandler = {
     /*
      *  All Requests are received using a Remote Control. Calling corresponding handlers for each of them.
      */
-    'PlayCommandIssued': async function (input : HandlerInput): Promise<Response> {
+    'PlaybackController.PlayCommandIssued': async function (input : HandlerInput): Promise<Response> {
         const request = input.requestEnvelope.request;
-        const msg = i18n.S(request, 'WELCOME_MSG', audioData(request).card.title);
-        return Promise.resolve(audio.play(audioData(request).url, 0, msg, audioData(request).card));
+        return Promise.resolve(audio.play(audioData(request).url, 0, null, null));
     },
-    'PauseCommandIssued': async function (input : HandlerInput): Promise<Response> {
-        return this['AMAZON.StopIntent'](input);
+    'PlaybackController.NextCommandIssued': async function (input : HandlerInput): Promise<Response> {
+        return Promise.resolve(input.responseBuilder.getResponse());
+    },
+    'PlaybackController.PreviousCommandIssued': async function (input : HandlerInput): Promise<Response> {
+        return Promise.resolve(input.responseBuilder.getResponse());
+    },
+    'PlaybackController.PauseCommandIssued': async function (input : HandlerInput): Promise<Response> {
+        return Promise.resolve(audio.stop(null));
     }
 }
