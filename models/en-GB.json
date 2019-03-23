@@ -33,6 +33,9 @@
           "name": "AMAZON.ResumeIntent"
         },
         {
+          "name": "AMAZON.RepeatIntent"
+        },
+        {
           "name": "AMAZON.HelpIntent",
           "samples": [
             "help me please",
