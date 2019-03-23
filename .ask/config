@@ -49,14 +49,15 @@
           }
         },
         "manifest": {
-          "eTag": "d9177b7a898b2fd0adb4873707413086"
+          "eTag": "ebf6d6117b46fa1dc80c22a1474fcd12"
         },
         "lambda": [
           {
             "arn": "arn:aws:lambda:eu-west-1:743602823695:function:alexa-maxi80",
-            "revisionId": "d99005c3-d759-48ea-b94b-34139e6aa275",
+            "revisionId": "202da80c-9d53-4340-b08c-17c33cdb82cc",
             "functionName": "arn:aws:lambda:eu-west-1:743602823695:function:alexa-maxi80",
             "awsRegion": "us-east-1",
+            "handler": "dist/index.handler",
             "alexaUsage": [
               "custom/default"
             ]
