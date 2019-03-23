@@ -185,6 +185,9 @@ export const IntentHandler: IHandler = {
         return Promise.resolve(audio.play(audioData(request).url, 0, msg, audioData(request).card));
     },
 
+    'AMAZON.RepeatIntent': async function (input : HandlerInput): Promise<Response> {
+        return this['AMAZON.StartOverIntent'](input);
+     },
     'AMAZON.LoopOnIntent': async function (input : HandlerInput): Promise<Response> {
         return this['AMAZON.StartOverIntent'](input);
      },
@@ -198,7 +201,7 @@ export const IntentHandler: IHandler = {
         return this['AMAZON.StartOverIntent'](input);
     },
     'AMAZON.StartOverIntent': async function (input : HandlerInput): Promise<Response> {
-        input.responseBuilder.speak(i18n.S(input.requestEnvelope.request, 'NOT_POSSIBLE_MSG'));
+        input.responseBuilder.speak(i18n.S(input.requestEnvelope.request, 'NOT_POSSIBLE_MSG')).withShouldEndSession(true);
         return Promise.resolve(input.responseBuilder.getResponse());
     },
 
