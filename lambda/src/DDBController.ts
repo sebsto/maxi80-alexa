@@ -7,7 +7,6 @@ import { AWSError } from 'aws-sdk';
 
 class DDBController {
 
-
     private ddbService = new AWS.DynamoDB({
         endpoint: 'http://localhost:8000'
     });
@@ -27,8 +26,10 @@ class DDBController {
 
             this.documentClient.get(params, (err : AWSError, data : AWS.DynamoDB.Types.DocumentClient.GetItemOutput) => {
                 if (err) {
-                    console.log("Error when calling DynamoDB");
-                    console.log(err, err.stack); // an error occurred
+                    if ( ! (err.code == 'ResourceNotFoundException' && Constants.useLocalDB) ) {
+                        console.log("Error when calling DynamoDB");
+                        console.log(err, err.stack); // an error occurred
+                    }
                     reject(err);
                 } else {
                     //console.log(data); // successful response
@@ -84,6 +85,39 @@ class DDBController {
             this.documentClient.delete(params, (err : AWSError, data : AWS.DynamoDB.Types.DocumentClient.DeleteItemOutput) => {
                 if (err) {
                     console.log("Error when deleting item from DynamoDB");
+                    console.log(err, err.stack); // an error occurred
+                    reject(err);
+                } else {
+                    // console.log(data); // successful response
+                    resolve(data);
+                }
+            });
+        });
+    }
+
+    /*
+     * Used for unit testing only, to prepare the database before the test
+     */
+    async createTable() : Promise<AWS.DynamoDB.Types.CreateTableOutput> {
+
+        return new Promise<AWS.DynamoDB.Types.CreateTableOutput>((resolve, reject) => {
+            
+            var params : AWS.DynamoDB.Types.CreateTableInput = {
+                TableName: Constants.jingle.databaseTable,
+                AttributeDefinitions: [{
+                        AttributeName: 'userId',
+                        AttributeType: 'S'
+                }],
+                KeySchema: [{
+                        KeyType: 'HASH',
+                        AttributeName: 'userId'
+                }],
+                BillingMode: "PAY_PER_REQUEST"
+            };
+
+            this.ddbService.createTable(params, (err : AWSError, data : AWS.DynamoDB.CreateTableOutput) => {
+                if (err) {
+                    console.log("Error when creating table");
                     console.log(err, err.stack); // an error occurred
                     reject(err);
                 } else {
