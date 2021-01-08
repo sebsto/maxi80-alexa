@@ -17,17 +17,15 @@ let skill_response: ResponseEnvelope;
 describe('Audio Player Test : Previous Command Issued', function () {
 
   // pre-requisites
-  before(() => {
+  before(async () => {
 
     this.timeout(5000);
 
-    return new Promise((resolve, reject) => {
-        skill(request, null, (error, responseEnvelope) => {
-          skill_response = responseEnvelope;
-          resolve();
-        });
-      });
+    await skill(request, null, (error, responseEnvelope) => {
+      skill_response = responseEnvelope;
+    });
   });
+  
   it('it responses with valid response structure ', () => {
 
     A.checkResponseStructure(skill_response);

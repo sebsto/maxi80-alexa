@@ -21,18 +21,15 @@ let skill_response: ResponseEnvelope;
 describe('Audio Player Test : LaunchRequest No Jingle', function () {
 
   // pre-requisites
-  before(() => {
+  before(async () => {
 
     this.timeout(5000);
 
-    return new Promise((resolve, reject) => {
-      // prepare the database
-      ddb.insertOrUpdateDDB(USER_ID).then(data => {
-        console.log("Finished preparing the database");
-        skill(request, null, (error, responseEnvelope) => {
-          skill_response = responseEnvelope;
-          resolve();
-        });
+    // prepare the database
+    await ddb.insertOrUpdateDDB(USER_ID).then(async (data) => {
+      console.log("Finished preparing the database");
+      await skill(request, null, (error, responseEnvelope) => {
+        skill_response = responseEnvelope;
       });
     });
   });

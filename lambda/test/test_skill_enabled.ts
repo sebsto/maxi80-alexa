@@ -16,15 +16,12 @@ let skill_response: ResponseEnvelope;
 describe('Maxi80 : Skill Disabled', function () {
 
   // pre-requisites
-  before(() => {
+  before(async () => {
 
     this.timeout(5000);
 
-    return new Promise((resolve, reject) => {
-      skill(request, null, (error, responseEnvelope) => {
-        skill_response = responseEnvelope;
-        resolve();
-      });
+    await skill(request, null, (error, responseEnvelope) => {
+      skill_response = responseEnvelope;
     });
   });
 

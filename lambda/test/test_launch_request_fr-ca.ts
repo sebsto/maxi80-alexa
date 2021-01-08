@@ -21,22 +21,18 @@ let skill_response: ResponseEnvelope;
 describe('Audio Player Test : LaunchRequest with Jingle', function () {
 
   // pre-requisites
-  before(() => {
+  before(async () => {
 
     this.timeout(5000);
 
-    return new Promise((resolve, reject) => {
+    // dynamically change the request to avoid duplicating JSON requests
+    r.request.locale = 'fr-CA';
 
-      // dynamically change the request to avoid duplicating JSON requests
-      r.request.locale = 'fr-CA';
-
-      // prepare the database
-      ddb.deleteFromDDB(USER_ID).then(data => {
-        console.log("Finished preparing the database");
-        skill(request, null, (error, responseEnvelope) => {
-          skill_response = responseEnvelope;
-          resolve();
-        });
+    // prepare the database
+    await ddb.deleteFromDDB(USER_ID).then(async (data) => {
+      console.log("Finished preparing the database");
+      await skill(request, null, (error, responseEnvelope) => {
+        skill_response = responseEnvelope;
       });
     });
   });

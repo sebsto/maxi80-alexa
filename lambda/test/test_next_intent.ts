@@ -18,37 +18,34 @@ let skill_response: ResponseEnvelope;
 describe('Audio Player Test : NextIntent', function () {
 
   // pre-requisites
-  before(() => {
+  before(async () => {
 
     this.timeout(5000);
 
-    return new Promise((resolve, reject) => {
-        skill(request, null, (error, responseEnvelope) => {
-          skill_response = responseEnvelope;
-          resolve();
-        });
-      });
+    await skill(request, null, (error, responseEnvelope) => {
+      skill_response = responseEnvelope;
+    });
   });
 
 
   it('it responses with valid response structure ', () => {
 
-      A.checkResponseStructure(skill_response);
-    }),
+    A.checkResponseStructure(skill_response);
+  }),
 
-    it('it responses with output speech ', () =>  {
+  it('it responses with output speech ', () => {
 
-      A.checkOutputSpeach(skill_response);
-    }),
+    A.checkOutputSpeach(skill_response);
+  }),
 
-    it('it closes the session ', () => {
-      A.checkSessionStatus(skill_response, true);
-    }),
+  it('it closes the session ', () => {
+    A.checkSessionStatus(skill_response, true);
+  }),
 
-    it('it responses with no directive ', () => {
+  it('it responses with no directive ', () => {
 
-      let r = skill_response.response;
-      expect(r).to.not.have.property("directives");
+    let r = skill_response.response;
+    expect(r).to.not.have.property("directives");
 
-    });
+  });
 });
