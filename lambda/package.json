@@ -5,8 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "clean": "rm -rf dist/*",
-    "build": "node_modules/typescript/bin/tsc",
-    "test": "AWS_REGION=eu-west-1 AWS_PROFILE=maxi80 /usr/local/bin/mocha -r ts-node/register test/test*.ts"
+    "build": "./node_modules/typescript/bin/tsc",
+    "test": "AWS_REGION=eu-west-1 AWS_PROFILE=maxi80 ./node_modules/mocha/bin/mocha -r ts-node/register test/test*.ts"
   },
   "keywords": [
     "alexa",
@@ -16,16 +16,16 @@
   "author": "Sébastien Stormacq",
   "license": "See license in ../../LICENSE.txt",
   "dependencies": {
-    "ask-sdk": "^2.5.1"
+    "ask-sdk": "^2.10.0"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
-    "@types/node": "^10.14.3",
-    "chai": "^4.2.0",
-    "mocha": "^5.2.0",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.3.4000"
+    "@types/chai": "^4",
+    "@types/mocha": "^8",
+    "@types/node": "^12",
+    "chai": "^4",
+    "mocha": "^8",
+    "ts-node": "^9",
+    "typescript": "^4"
   },
   "repository": {
     "type": "git",

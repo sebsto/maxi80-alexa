@@ -4,3 +4,5 @@ tools
 .idea
 *.zip
 amazon.pdf
+.ask
+.legacy

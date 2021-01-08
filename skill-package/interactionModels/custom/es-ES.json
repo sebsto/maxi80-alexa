@@ -1,0 +1,84 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "maxi ochenta",
+      "intents": [
+        {
+          "name": "PlayAudio",
+          "samples": [
+            "jugar",
+            "poner",
+            "reproducir",
+            "reproducir maxi ochenta",
+            "reproducir maxi ochenta por favor",
+            "poner maxi ochenta",
+            "poner maxi ochenta por favor",
+            "pon maxi ochenta",
+            "pon maxi ochenta por favor",
+            "pone maxi ochenta",
+            "pone maxi ochenta por favor",
+            "pon la radio",
+            "pon la radio por favor",
+            "pone la radio",
+            "pone la radio por favor",
+            "poner la radio",
+            "poner la radio por favor",
+            "reproducir la radio",
+            "reproducir la radio por favor",
+            "poner el sonido",
+            "poner el sonido por favor",
+            "pone el sonido",
+            "pone el sonido por favor",
+            "pon el sonido",
+            "pon el sonido por favor",
+            "poner la música",
+            "poner la música por favor",
+            "pon la música",
+            "pon la música por favor",
+            "pone la música",
+            "pone la música por favor"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent"
+        },
+        {
+          "name": "AMAZON.ResumeIntent"
+        },
+        {
+          "name": "AMAZON.RepeatIntent"
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayudame por favor",
+            "que debo hacer",
+            "y luego",
+            "como puedo escuchar maxi ochenta",
+            "como puedo escuchar la música",
+            "como escuchar maxi ochenta",
+            "como escuchar la música",
+            "dime cómo parar",
+            "còmo parar",
+            "cómo nos detenemos",
+            "cómo so detiene"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent"
+        },
+        {
+          "name": "AMAZON.CancelIntent"
+        },
+        {
+          "name": "AMAZON.StartOverIntent"
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ]
+    }
+  },
+  "version": "2"
+}
